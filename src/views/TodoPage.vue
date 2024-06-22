@@ -40,7 +40,7 @@ export default {
     return {
       newTodo: "",
       todos: [],
-      filter: "all", // Default filter
+      filter: "all",
     };
   },
   computed: {

@@ -7,7 +7,7 @@
         name="email"
         placeholder="e-mail"
         v-model="mail"
-        @blur="v$.$touch"
+        @blur="v$.mail.$touch"
       />
       <p v-if="v$.mail.$error">{{ v$.mail.$errors[0].$message }}</p>
       <input
@@ -15,7 +15,7 @@
         name="password"
         placeholder="Password"
         v-model="password"
-        @blur="v$.$touch"
+        @blur="v$.password.$touch"
       />
       <p v-if="v$.password.$error">{{ v$.password.$errors[0].$message }}</p>
       <button type="submit" class="btn btn-primary btn-block btn-large">
